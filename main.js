@@ -1,7 +1,12 @@
 function Usearch() {
+    const userId = document.getElementById("txtUser").value.trim();
+    if (!userId) {
+        alert("Please enter a GitHub User ID.");
+        return;
+    }
 
     const xhr = new XMLHttpRequest();
-    const url = `https://api.github.com/users/yash-b-patel`;
+    const url = `https://api.github.com/users/${userId}`;
 
     xhr.open("GET", url, true);
 
