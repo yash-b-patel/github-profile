@@ -64,7 +64,6 @@ button:hover {
     margin-bottom: 15px;
 }
 
-
 #profile div {
     margin-bottom: 10px;
     font-size: 1rem;
@@ -77,4 +76,71 @@ strong {
 
 .hidden {
     display: none;
+}
+
+
+.collapsible {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.clickable {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Style the profile card */
+.profile-card {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-card .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-card .profile-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-card .profile-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-card .profile-body p {
+    margin: 8px 0;
+}
+
+.profile-card .profile-body strong {
+    color: #333;
+}
+
+/* Make sure the card is visible */
+.profile-card.show {
+    display: block;
+}
+
+#card-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
 }
